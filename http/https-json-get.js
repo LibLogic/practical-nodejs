@@ -1,5 +1,5 @@
 const https = require('https');
-const url = 'https://somejson.com/somejson.json';
+const url = 'https://jsonplaceholder.typicode.com/posts';
 
 https.get(url, (response) => {
       let rawData = '';

@@ -5,7 +5,6 @@ http.get(url, (response) => {
       let rawData = '';
       response.on('data', (chunk) => { 
       rawData += chunk;
-    //  console.log(chunk.toString('utf8'));
     });
     response.on('end', () => {
         console.log(rawData);
